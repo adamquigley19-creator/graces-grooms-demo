@@ -1,171 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace's Grooms | 1-to-1 Professional Dog Grooming Dipton, DH9</title>
+    <title>Grace's Grooms | Luxury Pet Spa & Boutique Dipton</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Syne & Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#080A0F',
+                            card: '#10141E',
+                            border: '#1E2638',
+                            gold: '#E2C08D',
+                            goldMuted: 'rgba(226, 192, 141, 0.15)',
+                            goldBorder: 'rgba(226, 192, 141, 0.35)',
+                            text: '#F1F5F9'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Syne', 'sans-serif'],
+                        body: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f17; }
-        .font-luxury { font-family: 'Cinzel', serif; }
+        body { font-family: 'Outfit', sans-serif; background-color: #080A0F; color: #F1F5F9; }
+        .font-heading { font-family: 'Syne', sans-serif; }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(16, 20, 30, 0.85) 0%, rgba(11, 14, 22, 0.95) 100%);
+            backdrop-filter: blur(16px);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0D0 0%, #E2C08D 50%, #B89255 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px -5px rgba(226, 192, 141, 0.25);
+        }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        .glass-panel { background: rgba(18, 24, 38, 0.75); backdrop-filter: blur(12px); }
     </style>
 </head>
-<body class="text-slate-100 antialiased min-h-screen pb-28">
+<body class="antialiased min-h-screen pb-24 selection:bg-amber-400 selection:text-slate-950">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-amber-600 via-rose-500 to-amber-600 text-slate-950 text-[11px] font-black py-2 px-4 text-center tracking-widest uppercase shadow-md">
-        <i class="fa-solid fa-crown mr-1"></i> 1-to-1 Luxury Spa & Grooming Studio • Dipton, DH9
+    <div class="bg-gradient-to-r from-[#121622] via-[#221A10] to-[#121622] border-b border-brand-goldBorder/30 text-brand-gold text-[10px] font-bold py-2 px-4 text-center tracking-[0.2em] uppercase flex items-center justify-center gap-2">
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>1-to-1 Boutique Dog Spa • 8 Wordsworth Gardens, Dipton, DH9 9LF</span>
     </div>
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-5 py-4">
-        <div class="max-w-md mx-auto flex justify-between items-center">
+    <header class="sticky top-0 z-40 bg-[#080A0F]/90 backdrop-blur-md border-b border-brand-border/60 px-6 py-4">
+        <div class="max-w-xl mx-auto flex justify-between items-center">
             <div>
-                <h1 class="text-lg font-bold font-luxury text-amber-100 tracking-wider flex items-center gap-2">
-                    <i class="fa-solid fa-[#d4af37] fa-scissors text-amber-400"></i> Grace's Grooms
-                </h1>
-                <p class="text-[9px] text-amber-400/90 font-bold uppercase tracking-widest">Dipton • Stanley • DH9 9LF</p>
+                <a href="#" class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-full bg-brand-goldMuted border border-brand-goldBorder flex items-center justify-center text-brand-gold">
+                        <i class="fa-solid fa-scissors text-xs"></i>
+                    </div>
+                    <span class="text-xl font-extrabold font-heading tracking-tight gold-gradient-text">GRACE'S GROOMS</span>
+                </a>
+                <p class="text-[9px] text-slate-400 font-medium uppercase tracking-[0.25em] mt-0.5">Dipton & Stanley Studio</p>
             </div>
-            <a href="tel:07957580803" class="bg-amber-500/10 border border-amber-500/40 hover:bg-amber-500/20 text-amber-300 text-xs px-3.5 py-2 rounded-lg font-bold uppercase transition-all flex items-center gap-1.5 shadow-lg">
-                <i class="fa-solid fa-phone text-xs"></i> <span>07957 580803</span>
+            <a href="tel:07957580803" class="bg-brand-goldMuted border border-brand-goldBorder hover:bg-brand-gold/20 text-brand-gold text-xs px-4 py-2.5 rounded-full font-semibold uppercase tracking-wider transition-all flex items-center gap-2">
+                <i class="fa-solid fa-phone text-[10px]"></i> 
+                <span>07957 580803</span>
             </a>
         </div>
     </header>
 
-    <main class="max-w-md mx-auto px-5 mt-6 space-y-7">
+    <main class="max-w-xl mx-auto px-5 mt-6 space-y-8">
 
-        <!-- Hero Section -->
-        <section class="relative rounded-2xl overflow-hidden border border-amber-500/20 shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" alt="Dog Grooming Spa" class="w-full h-60 object-cover brightness-[0.35]">
-            <div class="absolute inset-0 p-6 flex flex-col justify-end text-left space-y-2 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent">
-                <div class="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] uppercase font-bold text-amber-300 w-max">
-                    <i class="fa-solid fa-sparkles text-amber-400"></i> Premium 1-on-1 Pampering
+        <!-- Editorial Hero Section -->
+        <section class="relative rounded-3xl overflow-hidden border border-brand-goldBorder/40 glass-card shadow-2xl">
+            <div class="relative h-64 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=1000&q=80" 
+                     alt="Grace's Grooms Luxury Dog Grooming" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1000&q=80';"
+                     class="w-full h-full object-cover brightness-[0.45] transition-transform duration-1000 hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#080A0F] via-transparent to-transparent"></div>
+                <div class="absolute top-4 left-4 inline-flex items-center gap-2 bg-[#080A0F]/80 border border-brand-goldBorder/40 px-3 py-1 rounded-full text-[10px] uppercase font-semibold text-brand-gold tracking-widest backdrop-blur-md">
+                    <i class="fa-solid fa-crown text-[10px]"></i> Bespoke Pet Styling
                 </div>
-                <h2 class="text-2xl font-bold font-luxury text-white leading-tight">
-                    Relaxed & Tailored Care in Dipton
+            </div>
+            
+            <div class="p-6 -mt-10 relative z-10 space-y-3">
+                <h2 class="text-2xl font-bold font-heading text-white leading-tight">
+                    Calm, Professional & Personalised Grooming Care
                 </h2>
-                <p class="text-[11px] text-slate-300 leading-relaxed">
-                    Stress-free home salon environment. Handled with patience, affection & professional precision.
+                <p class="text-xs text-slate-300 font-light leading-relaxed">
+                    Designed for dogs who thrive in a tranquil 1-on-1 environment. Every appointment is allocated dedicated time with gentle handling, high-end vegan shampoos, and meticulous attention to detail.
                 </p>
+
+                <!-- Highlights bar -->
+                <div class="grid grid-cols-3 gap-2 pt-3 border-t border-brand-border/60 text-center">
+                    <div>
+                        <p class="text-brand-gold text-xs font-bold font-heading">1-to-1</p>
+                        <p class="text-[9px] text-slate-400 uppercase tracking-wider">Unrushed Care</p>
+                    </div>
+                    <div class="border-x border-brand-border/60">
+                        <p class="text-brand-gold text-xs font-bold font-heading">Cruelty-Free</p>
+                        <p class="text-[9px] text-slate-400 uppercase tracking-wider">Organic Spa</p>
+                    </div>
+                    <div>
+                        <p class="text-brand-gold text-xs font-bold font-heading">DH9 Local</p>
+                        <p class="text-[9px] text-slate-400 uppercase tracking-wider">Wordsworth Gdns</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Booking Deposit Notice Banner -->
-        <div class="bg-slate-900/90 border border-amber-500/30 p-4 rounded-xl flex items-start gap-3">
-            <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
-                <i class="fa-solid fa-shield-halved text-sm"></i>
+        <!-- Policy & Deposit Banner -->
+        <div class="bg-brand-card/90 border border-brand-goldBorder/30 p-4 rounded-2xl flex items-center gap-4 glass-card">
+            <div class="w-10 h-10 rounded-xl bg-brand-goldMuted border border-brand-goldBorder flex items-center justify-center text-brand-gold shrink-0">
+                <i class="fa-solid fa-shield-cat text-base"></i>
             </div>
-            <div>
-                <h4 class="text-xs font-bold text-amber-200 uppercase tracking-wider">Deposit Required Upon Booking</h4>
-                <p class="text-[11px] text-slate-400 mt-0.5 leading-relaxed">
-                    To secure your slot at Grace's Grooms, a <strong class="text-white">£10.00 non-refundable deposit</strong> is taken online. The remaining balance is payable on the day.
+            <div class="space-y-0.5">
+                <h4 class="text-xs font-bold font-heading uppercase text-brand-gold tracking-wider">£10 Online Deposit Required</h4>
+                <p class="text-[11px] text-slate-300 font-light leading-snug">
+                    Reserving your space requires a £10.00 deposit today. The balance is paid in person at your salon appointment.
                 </p>
             </div>
         </div>
 
-        <!-- Local Google Reviews Carousel -->
-        <section class="space-y-3">
-            <div class="flex items-center justify-between">
+        <!-- Service Selector Section -->
+        <section class="space-y-4">
+            <div class="flex justify-between items-end">
                 <div>
-                    <h3 class="text-xs font-bold font-luxury uppercase text-amber-100 tracking-wider">5-Star Customer Reviews</h3>
-                    <p class="text-[10px] text-slate-400">Verified Client Feedback</p>
+                    <h3 class="text-base font-bold font-heading uppercase tracking-wide text-white">Choose Treatment</h3>
+                    <p class="text-xs text-slate-400">Select a grooming option below to configure details.</p>
                 </div>
-                <div class="flex items-center gap-1 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-lg">
-                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
-                    <span class="text-xs font-black text-amber-400">5.0</span>
-                    <span class="text-[9px] text-slate-400 font-bold">(Sacriston/Dipton)</span>
-                </div>
+                <span class="text-[10px] text-brand-gold uppercase tracking-widest font-semibold bg-brand-goldMuted px-2.5 py-1 rounded-full border border-brand-goldBorder/30">4 Treatments Available</span>
             </div>
 
-            <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-                <div class="min-w-[260px] max-w-[260px] glass-panel border border-slate-800 p-4 rounded-xl space-y-2">
-                    <div class="flex text-amber-400 text-[10px] gap-0.5">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-[11px] text-slate-300 italic leading-snug">
-                        "Laura is so patient and talented. Thomas absolutely loves going for his groom! Couldn't recommend Grace's Grooms enough."
-                    </p>
-                    <p class="text-[10px] font-bold text-amber-300/90 pt-1 border-t border-slate-800/80">— Verified Client (DH9)</p>
-                </div>
-
-                <div class="min-w-[260px] max-w-[260px] glass-panel border border-slate-800 p-4 rounded-xl space-y-2">
-                    <div class="flex text-amber-400 text-[10px] gap-0.5">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-[11px] text-slate-300 italic leading-snug">
-                        "Amazing service for my Sprocker Spaniel. Very gentle handling, beautiful finish, and very reasonably priced!"
-                    </p>
-                    <p class="text-[10px] font-bold text-amber-300/90 pt-1 border-t border-slate-800/80">— Stanley Resident</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Menu -->
-        <section class="space-y-3.5">
-            <div>
-                <h3 class="text-sm font-bold font-luxury uppercase text-white tracking-wider">Select Grooming Service</h3>
-                <p class="text-[11px] text-slate-400">Select options below to calculate deposit and balance.</p>
-            </div>
-
-            <div class="space-y-3">
+            <div class="space-y-3" id="service-container">
                 
-                <!-- Service 1 -->
-                <div onclick="selectService(this, 'Full Luxury Spa Groom', 40.00)" class="service-card cursor-pointer bg-slate-900/80 border-2 border-amber-500/80 p-4 rounded-xl transition-all shadow-xl">
-                    <div class="flex gap-3.5">
-                        <img src="https://images.unsplash.com/photo-1534361960057-19889db98d18?auto=format&fit=crop&w=300&q=80" alt="Full Groom" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                <!-- Service Card 1 -->
+                <div onclick="selectService(this, 'Full Luxury Spa Groom', 40.00)" class="service-card cursor-pointer bg-brand-card border-2 border-brand-gold p-4 rounded-2xl transition-all duration-300 gold-border-glow relative overflow-hidden group">
+                    <div class="flex gap-4 items-center">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden border border-brand-goldBorder shrink-0 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400&q=80" 
+                                 alt="Full Luxury Groom" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=400&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex justify-between items-start">
-                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Full Luxury Groom</h4>
-                                <span class="text-xs font-bold text-amber-400">from £40.00</span>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Full Luxury Spa Groom</h4>
+                                <span class="text-xs font-extrabold text-brand-gold font-heading">from £40.00</span>
                             </div>
-                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Warm hydrobath bath, blow dry, styled clip/cut, ear cleaning, hygiene trim & cologne finish.</p>
+                            <p class="text-[11px] text-slate-300 mt-1 leading-relaxed font-light">Warm hydrobath coat wash, gentle fluff dry, breed styling or clip, ear care, sanitary trim & luxury fragrance coat mist.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div onclick="selectService(this, 'Mini Groom & Maintenance', 28.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
-                    <div class="flex gap-3.5">
-                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=300&q=80" alt="Mini Groom" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                <!-- Service Card 2 -->
+                <div onclick="selectService(this, 'Mini Groom & Maintenance', 28.00)" class="service-card cursor-pointer bg-brand-card/60 border border-brand-border p-4 rounded-2xl transition-all duration-300 hover:border-slate-600 relative overflow-hidden group">
+                    <div class="flex gap-4 items-center">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden border border-brand-border shrink-0 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80" 
+                                 alt="Mini Groom & Maintenance" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=400&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex justify-between items-start">
-                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Mini Groom & Tidy</h4>
-                                <span class="text-xs font-bold text-slate-300">from £28.00</span>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Mini Groom & Tidy</h4>
+                                <span class="text-xs font-bold text-slate-300 font-heading">from £28.00</span>
                             </div>
-                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Ideal between full grooms. Bath, blow dry, face trim, paw trim, hygiene & nail clipping.</p>
+                            <p class="text-[11px] text-slate-300 mt-1 leading-relaxed font-light">Ideal maintenance session. Hydrobath wash, warm blowout, face tidy, paw pad trim & nail care.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div onclick="selectService(this, 'Puppy First Spa Introduction', 22.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
-                    <div class="flex gap-3.5">
-                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&w=300&q=80" alt="Puppy Intro" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                <!-- Service Card 3 -->
+                <div onclick="selectService(this, 'Puppy First Spa Experience', 22.00)" class="service-card cursor-pointer bg-brand-card/60 border border-brand-border p-4 rounded-2xl transition-all duration-300 hover:border-slate-600 relative overflow-hidden group">
+                    <div class="flex gap-4 items-center">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden border border-brand-border shrink-0 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&w=400&q=80" 
+                                 alt="Puppy First Spa Experience" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=400&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex justify-between items-start">
-                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Puppy Spa Intro</h4>
-                                <span class="text-xs font-bold text-slate-300">£22.00</span>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">Puppy Spa Intro</h4>
+                                <span class="text-xs font-bold text-slate-300 font-heading">£22.00</span>
                             </div>
-                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Gentle desensitisation session for pups under 6 months. Slow-paced wash, dry, paw & ear handling.</p>
+                            <p class="text-[11px] text-slate-300 mt-1 leading-relaxed font-light">Patience-focused desensitisation for puppies under 6 months. Playful exposure to dryer sounds, water & scissors.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div onclick="selectService(this, 'De-Shedding & Bath Treatment', 32.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
-                    <div class="flex gap-3.5">
-                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=300&q=80" alt="Deshedding Treatment" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                <!-- Service Card 4 -->
+                <div onclick="selectService(this, 'De-Shedding & Blowout Spa', 32.00)" class="service-card cursor-pointer bg-brand-card/60 border border-brand-border p-4 rounded-2xl transition-all duration-300 hover:border-slate-600 relative overflow-hidden group">
+                    <div class="flex gap-4 items-center">
+                        <div class="w-20 h-20 rounded-xl overflow-hidden border border-brand-border shrink-0 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1534361960057-19889db98d18?auto=format&fit=crop&w=400&q=80" 
+                                 alt="De-Shedding & Blowout Spa" 
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&w=400&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
                         <div class="flex-1 min-w-0">
                             <div class="flex justify-between items-start">
-                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">De-Shed Spa & Blowout</h4>
-                                <span class="text-xs font-bold text-slate-300">from £32.00</span>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-white font-heading">De-Shedding Blowout</h4>
+                                <span class="text-xs font-bold text-slate-300 font-heading">from £32.00</span>
                             </div>
-                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Specialist undercoat rake out, deshedding shampoo treatment, blast dry & nail clip.</p>
+                            <p class="text-[11px] text-slate-300 mt-1 leading-relaxed font-light">Deep undercoat rake-out with specialty deshedding conditioning treatments & high-velocity coat blowout.</p>
                         </div>
                     </div>
                 </div>
@@ -173,81 +226,110 @@
             </div>
         </section>
 
-        <!-- Booking & Pre-payment Calculator Section -->
-        <section class="bg-slate-900 border border-amber-500/40 p-6 rounded-2xl space-y-5 shadow-2xl">
-            <div class="border-b border-slate-800 pb-4">
-                <div class="flex justify-between items-center mb-2">
-                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Selected Groom</span>
-                    <span id="selected-service-title" class="text-xs font-bold text-white">Full Luxury Groom</span>
+        <!-- Booking & Slot Selection Form -->
+        <section class="glass-card border border-brand-goldBorder/40 p-6 rounded-3xl space-y-5 shadow-2xl">
+            <div class="border-b border-brand-border/80 pb-4 space-y-1.5">
+                <div class="flex justify-between items-center">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-brand-gold font-heading">Selected Treatment</span>
+                    <span id="summary-service-name" class="text-xs font-bold text-white font-heading">Full Luxury Spa Groom</span>
                 </div>
                 <div class="flex justify-between items-center text-xs text-slate-400">
                     <span>Estimated Full Price:</span>
-                    <span id="service-total-price" class="font-bold text-slate-200">£40.00</span>
+                    <span id="summary-total-price" class="font-bold text-slate-200">£40.00</span>
                 </div>
-                <div class="flex justify-between items-center text-xs text-amber-300 mt-1 pt-1 border-t border-slate-800/60 font-bold">
-                    <span>Deposit Due Now (Online):</span>
-                    <span id="service-deposit-price" class="text-sm font-black text-amber-400">£10.00</span>
+                <div class="flex justify-between items-center text-xs text-brand-gold pt-2 border-t border-brand-border/40 font-bold">
+                    <span class="flex items-center gap-1.5">
+                        <i class="fa-solid fa-lock text-[10px]"></i> Non-Refundable Deposit:
+                    </span>
+                    <span id="summary-deposit-price" class="text-sm font-extrabold font-heading text-brand-gold">£10.00</span>
                 </div>
             </div>
 
-            <form onsubmit="event.preventDefault(); openPaymentModal();" class="space-y-3.5">
-                <div>
-                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Your Full Name</label>
-                    <input id="owner-name" type="text" placeholder="e.g. Jessica Miller" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
-                </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <div>
-                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Dog's Name</label>
-                        <input id="dog-name" type="text" placeholder="e.g. Barnaby" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
+            <form onsubmit="event.preventDefault(); triggerPaymentModal();" class="space-y-4">
+                <!-- Appointment Date & Slot Picker -->
+                <div class="space-y-2">
+                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider font-heading">Select Preferred Date & Time Window</label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="date" id="booking-date" required class="bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                        <select id="booking-slot" required class="bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                            <option value="Morning Slot (09:00 - 12:00)">Morning (09:00 - 12:00)</option>
+                            <option value="Early Afternoon (12:30 - 15:00)">Afternoon (12:30 - 15:00)</option>
+                            <option value="Late Afternoon (15:30 - 18:00)">Late Afternoon (15:30)</option>
+                        </select>
                     </div>
-                    <div>
-                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Breed & Size</label>
-                        <input id="dog-breed" type="text" placeholder="e.g. Cockapoo (Med)" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Mobile Contact Number</label>
-                    <input id="contact-phone" type="tel" placeholder="e.g. 07123 456789" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
                 </div>
 
-                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-black py-3.5 rounded-lg text-xs uppercase tracking-wider transition-all shadow-xl flex items-center justify-center gap-2">
+                <!-- Dog Details -->
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1 font-heading">Owner's Name</label>
+                        <input id="owner-name" type="text" placeholder="e.g. Eleanor Vance" required class="w-full bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1 font-heading">Phone Number</label>
+                        <input id="owner-phone" type="tel" placeholder="e.g. 07957 000000" required class="w-full bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1 font-heading">Dog's Name</label>
+                        <input id="dog-name" type="text" placeholder="e.g. Winston" required class="w-full bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1 font-heading">Breed & Size</label>
+                        <input id="dog-breed" type="text" placeholder="e.g. Cavapoo (Small)" required class="w-full bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all">
+                    </div>
+                </div>
+
+                <!-- Special Notes -->
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1 font-heading">Coat Notes or Special Needs (Optional)</label>
+                    <textarea id="special-notes" rows="2" placeholder="e.g. Sensitive ears, nervous around blowdryer..." class="w-full bg-brand-bg border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-white outline-none focus:border-brand-gold transition-all resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-[#F0D5AC] via-[#E2C08D] to-[#C99E5C] text-slate-950 font-extrabold font-heading py-3.5 rounded-xl text-xs uppercase tracking-widest transition-all hover:brightness-110 shadow-lg shadow-amber-500/10 flex items-center justify-center gap-2 mt-2">
                     <i class="fa-solid fa-lock text-xs"></i>
-                    <span>Pay £10.00 Deposit & Reserve Appointment</span>
+                    <span>Pay £10.00 Deposit & Request Appointment</span>
                 </button>
             </form>
         </section>
 
-        <!-- Address & Contact Info -->
-        <footer class="text-center space-y-2 pt-4 border-t border-slate-800">
-            <p class="text-xs font-bold text-amber-200 uppercase font-luxury tracking-wider">Grace's Grooms</p>
-            <p class="text-[11px] text-slate-400">8 Wordsworth Gardens, Dipton, Stanley, DH9 9LF</p>
-            <p class="text-[11px] text-slate-400">Direct Telephone: 07957 580803</p>
-            <p class="text-[9px] text-slate-500 pt-2">© Grace's Grooms Stanley • Secure Deposit Gateway Prototype</p>
+        <!-- Studio Location & Contact Footer -->
+        <footer class="text-center space-y-3 pt-6 border-t border-brand-border/60">
+            <a href="#" class="inline-block text-lg font-bold font-heading gold-gradient-text">GRACE'S GROOMS</a>
+            <p class="text-xs text-slate-400">8 Wordsworth Gardens, Dipton, Stanley, DH9 9LF</p>
+            <div class="flex justify-center gap-4 text-xs text-brand-gold font-medium">
+                <a href="tel:07957580803" class="hover:underline"><i class="fa-solid fa-phone mr-1"></i> 07957 580803</a>
+                <span>•</span>
+                <span>1-to-1 Appointment Studio</span>
+            </div>
+            <p class="text-[9px] text-slate-400 pt-2 tracking-widest uppercase">© Grace's Grooms • Professional Pet Grooming Dipton</p>
         </footer>
 
     </main>
 
-    <!-- Payment Gateway Modal Overlay -->
-    <div id="payment-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-sm w-full p-6 space-y-5 shadow-2xl relative">
+    <!-- Payment Overlay Gateway -->
+    <div id="payment-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-brand-goldBorder/40 rounded-3xl max-w-sm w-full p-6 space-y-5 shadow-2xl relative animate-in fade-in zoom-in duration-200">
             
-            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-base">
-                <i class="fa-solid fa-xmark"></i>
+            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
             </button>
 
-            <div class="text-center space-y-1">
-                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center text-amber-400 mx-auto mb-2">
+            <div class="text-center space-y-1.5">
+                <div class="w-12 h-12 bg-brand-goldMuted border border-brand-goldBorder/40 rounded-full flex items-center justify-center text-brand-gold mx-auto">
                     <i class="fa-solid fa-credit-card text-lg"></i>
                 </div>
-                <h3 class="text-sm font-bold uppercase tracking-wider text-white">Secure Pre-Payment Deposit</h3>
-                <p class="text-[11px] text-slate-400">Grace's Grooms • Booking Deposit</p>
+                <h3 class="text-sm font-bold font-heading uppercase tracking-wider text-white">Deposit Pre-Payment</h3>
+                <p class="text-[11px] text-slate-400">Grace's Grooms Studio • Dipton</p>
             </div>
 
-            <!-- Deposit Summary Box -->
-            <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-xs space-y-1.5">
+            <!-- Breakdown Summary -->
+            <div class="bg-brand-bg p-3.5 rounded-2xl border border-brand-border/80 text-xs space-y-2">
                 <div class="flex justify-between text-slate-300">
-                    <span>Deposit Due Now:</span>
-                    <strong class="text-amber-400 font-extrabold">£10.00</strong>
+                    <span>Deposit Payable Now:</span>
+                    <strong class="text-brand-gold font-bold font-heading">£10.00</strong>
                 </div>
                 <div class="flex justify-between text-slate-400 text-[10px]">
                     <span>Remaining Balance at Salon:</span>
@@ -255,89 +337,104 @@
                 </div>
             </div>
 
-            <!-- Quick Digital Wallet Buttons -->
+            <!-- Fast Digital Payment Methods -->
             <div class="space-y-2">
-                <button onclick="processPayment('Apple Pay')" class="w-full bg-white hover:bg-slate-200 text-black font-extrabold py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 transition-all">
-                    <i class="fa-brands fa-apple text-sm"></i> Pay with Apple Pay
+                <button onclick="executePayment('Apple Pay')" class="w-full bg-white hover:bg-slate-200 text-slate-950 font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition-all">
+                    <i class="fa-brands fa-apple text-base"></i> Pay with Apple Pay
                 </button>
-                <button onclick="processPayment('Google Pay')" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-extrabold py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 border border-slate-700 transition-all">
-                    <i class="fa-brands fa-google text-xs text-amber-400"></i> Pay with Google Pay
+                <button onclick="executePayment('Google Pay')" class="w-full bg-[#1A1F2C] hover:bg-[#252C3D] text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 border border-slate-700 transition-all">
+                    <i class="fa-brands fa-google text-xs text-brand-gold"></i> Pay with Google Pay
                 </button>
             </div>
 
             <div class="flex items-center my-2">
-                <div class="flex-1 border-t border-slate-800"></div>
-                <span class="px-2 text-[10px] uppercase font-bold text-slate-500">Or Debit / Credit Card</span>
-                <div class="flex-1 border-t border-slate-800"></div>
+                <div class="flex-1 border-t border-brand-border"></div>
+                <span class="px-3 text-[9px] uppercase font-bold text-slate-400 tracking-wider">Debit or Credit Card</span>
+                <div class="flex-1 border-t border-brand-border"></div>
             </div>
 
-            <!-- Card Inputs Mockup -->
-            <div class="space-y-2 text-left">
-                <input type="text" placeholder="Cardholder Name" value="Jessica Miller" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
-                <input type="text" placeholder="Card Number (•••• •••• •••• 4242)" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+            <!-- Payment Card Inputs -->
+            <div class="space-y-2">
+                <input type="text" placeholder="Cardholder Name" value="Eleanor Vance" class="w-full bg-brand-bg border border-brand-border rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-brand-gold">
+                <input type="text" placeholder="Card Number (•••• •••• •••• 8812)" class="w-full bg-brand-bg border border-brand-border rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-brand-gold">
                 <div class="grid grid-cols-2 gap-2">
-                    <input type="text" placeholder="MM / YY" class="bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
-                    <input type="text" placeholder="CVC" class="bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+                    <input type="text" placeholder="MM / YY" class="bg-brand-bg border border-brand-border rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-brand-gold">
+                    <input type="text" placeholder="CVC" class="bg-brand-bg border border-brand-border rounded-xl px-3 py-2 text-xs text-white outline-none focus:border-brand-gold">
                 </div>
             </div>
 
-            <button onclick="processPayment('Card')" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black py-3 rounded-lg text-xs uppercase tracking-wider transition-all shadow-lg">
+            <button onclick="executePayment('Card')" class="w-full bg-gradient-to-r from-[#F0D5AC] to-[#C99E5C] text-slate-950 font-bold font-heading py-3 rounded-xl text-xs uppercase tracking-wider transition-all hover:brightness-105 shadow-md">
                 Confirm & Pay £10.00 Deposit
             </button>
 
-            <p class="text-[9px] text-center text-slate-500">
-                <i class="fa-solid fa-lock text-slate-500 mr-1"></i> 256-Bit SSL Encrypted Payment Gateway
+            <p class="text-[9px] text-center text-slate-400">
+                <i class="fa-solid fa-lock mr-1"></i> Encrypted 256-Bit SSL Payment Protection
             </p>
         </div>
     </div>
 
-    <!-- Booking Confirmation Modal -->
+    <!-- Booking Confirmation Dialog -->
     <div id="confirmation-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-emerald-500/50 rounded-2xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl">
-            <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto">
+        <div class="bg-brand-card border border-emerald-500/40 rounded-3xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl">
+            <div class="w-14 h-14 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center justify-center text-2xl mx-auto">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
-            <h3 class="text-lg font-bold font-luxury text-white">Deposit Confirmed!</h3>
-            <p id="confirmation-details" class="text-xs text-slate-300 leading-relaxed">
-                Thank you! Your deposit of £10.00 has been received. Grace's Grooms will contact you on your mobile to confirm your appointment time.
+            <h3 class="text-base font-bold font-heading text-white">Deposit Received!</h3>
+            <p id="confirmation-details" class="text-xs text-slate-300 leading-relaxed font-light">
+                Thank you! Your £10.00 deposit is confirmed. Grace's Grooms will review your requested date and reach out to confirm your exact appointment window.
             </p>
-            <div class="bg-slate-950 p-3 rounded-lg text-[10px] text-slate-400 text-left space-y-1 border border-slate-800">
-                <p><strong class="text-white">Location:</strong> 8 Wordsworth Gardens, Dipton, DH9 9LF</p>
-                <p><strong class="text-white">Direct Line:</strong> 07957 580803</p>
-                <p><strong class="text-white">Ref:</strong> GG-DEP-<span id="booking-ref">8492</span></p>
+            <div class="bg-brand-bg p-3.5 rounded-2xl text-[10px] text-slate-400 text-left space-y-1.5 border border-brand-border">
+                <p><strong class="text-white font-heading">Studio Address:</strong> 8 Wordsworth Gardens, Dipton, DH9 9LF</p>
+                <p><strong class="text-white font-heading">Direct Contact:</strong> 07957 580803</p>
+                <p><strong class="text-white font-heading">Receipt Ref:</strong> GG-DEP-<span id="booking-ref">7391</span></p>
             </div>
-            <button onclick="closeConfirmationModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider transition-all">
-                Close
+            <button onclick="closeConfirmationModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition-all">
+                Close & Return
             </button>
         </div>
     </div>
 
+    <!-- Client Side Interaction Logic -->
     <script>
-        let currentFullPrice = 40.00;
-        const depositPrice = 10.00;
+        // Default today's date into date selector
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateInput = document.getElementById('booking-date');
+            if (dateInput) {
+                const today = new Date();
+                today.setDate(today.getDate() + 1); // Default to tomorrow
+                dateInput.value = today.toISOString().split('T')[0];
+                dateInput.min = new Date().toISOString().split('T')[0];
+            }
+        });
 
-        function selectService(element, name, price) {
+        let currentFullPrice = 40.00;
+        const fixedDeposit = 10.00;
+
+        function selectService(element, serviceName, fullPrice) {
+            // Reset all card styles
             document.querySelectorAll('.service-card').forEach(card => {
-                card.className = 'service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700';
-                const span = card.querySelector('span');
-                if(span) span.className = 'text-xs font-bold text-slate-300';
+                card.className = 'service-card cursor-pointer bg-brand-card/60 border border-brand-border p-4 rounded-2xl transition-all duration-300 hover:border-slate-600 relative overflow-hidden group';
+                const priceLabel = card.querySelector('span');
+                if(priceLabel) priceLabel.className = 'text-xs font-bold text-slate-300 font-heading';
             });
 
-            element.className = 'service-card cursor-pointer bg-slate-900/80 border-2 border-amber-500/80 p-4 rounded-xl transition-all shadow-xl';
-            const activeSpan = element.querySelector('span');
-            if(activeSpan) activeSpan.className = 'text-xs font-bold text-amber-400';
+            // Highlight selected card
+            element.className = 'service-card cursor-pointer bg-brand-card border-2 border-brand-gold p-4 rounded-2xl transition-all duration-300 gold-border-glow relative overflow-hidden group';
+            const selectedPriceLabel = element.querySelector('span');
+            if(selectedPriceLabel) selectedPriceLabel.className = 'text-xs font-extrabold text-brand-gold font-heading';
 
-            currentFullPrice = price;
-            document.getElementById('selected-service-title').innerText = name;
-            document.getElementById('service-total-price').innerText = '£' + price.toFixed(2);
+            // Update calculation labels
+            currentFullPrice = fullPrice;
+            document.getElementById('summary-service-name').innerText = serviceName;
+            document.getElementById('summary-total-price').innerText = '£' + fullPrice.toFixed(2);
             
-            const remaining = price - depositPrice;
-            document.getElementById('modal-remaining-balance').innerText = '£' + (remaining > 0 ? remaining.toFixed(2) : '0.00');
+            const remainingBalance = fullPrice - fixedDeposit;
+            document.getElementById('modal-remaining-balance').innerText = '£' + (remainingBalance > 0 ? remainingBalance.toFixed(2) : '0.00');
         }
 
-        function openPaymentModal() {
+        function triggerPaymentModal() {
             const name = document.getElementById('owner-name').value;
-            const phone = document.getElementById('contact-phone').value;
+            const phone = document.getElementById('owner-phone').value;
             if(!name || !phone) return;
 
             document.getElementById('payment-modal').classList.remove('hidden');
@@ -347,13 +444,15 @@
             document.getElementById('payment-modal').classList.add('hidden');
         }
 
-        function processPayment(method) {
+        function executePayment(method) {
             closePaymentModal();
             const dog = document.getElementById('dog-name').value || 'your pet';
+            const selectedDate = document.getElementById('booking-date').value;
+            const selectedSlot = document.getElementById('booking-slot').value;
             const randomRef = Math.floor(1000 + Math.random() * 9000);
             
             document.getElementById('booking-ref').innerText = randomRef;
-            document.getElementById('confirmation-details').innerHTML = `Your <strong>£10.00 deposit</strong> was processed successfully via <strong>${method}</strong>.<br><br>Grace's Grooms looks forward to pampering <strong>${dog}</strong> at 8 Wordsworth Gardens, Dipton!`;
+            document.getElementById('confirmation-details').innerHTML = `Your <strong>£10.00 deposit</strong> was processed successfully via <strong>${method}</strong>.<br><br>We have logged your request for <strong>${dog}</strong> on <strong>${selectedDate}</strong> (${selectedSlot}) at our Dipton Studio!`;
             
             document.getElementById('confirmation-modal').classList.remove('hidden');
         }
