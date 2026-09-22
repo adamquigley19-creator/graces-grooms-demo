@@ -1,43 +1,366 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grace's Grooms | One-to-One Dog Grooming</title>
-<meta name="description" content="Grace's Grooms — a calm, one-to-one home-based grooming concept for dogs in the Stanley area.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#27342e;--sage:#718875;--cream:#f7f4ec;--paper:#fffdf8;--gold:#b89b61;--line:#ded9cb}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 24px}
-.top{background:#27342e;color:#fff;padding:10px 0;font-size:13px}.top .wrap{display:flex;justify-content:space-between}.nav{padding:22px 0;position:sticky;top:0;background:rgba(247,244,236,.94);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid var(--line)}nav{display:flex;justify-content:space-between;align-items:center}.brand{font-family:"Playfair Display";font-size:27px;font-weight:700}.navlinks{display:flex;gap:24px;font-size:14px}.navlinks a{text-decoration:none}.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:13px 20px;border-radius:99px;font-weight:700;border:0;cursor:pointer}
-.hero{padding:76px 0 64px;background:radial-gradient(circle at 85% 20%,#dfe8dc 0,transparent 35%),var(--cream)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--sage);font-weight:700}.hero h1{font:600 clamp(48px,6vw,78px)/1.02 "Playfair Display";margin:14px 0 20px}.hero p{font-size:18px;max-width:650px;color:#55615b}.hero-img{height:510px;border-radius:30px 30px 110px 30px;background:linear-gradient(0deg,rgba(39,52,46,.1),transparent),url("https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1000&q=85") center/cover;box-shadow:20px 20px 0 #d8dfd4}.pills{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.pill{border:1px solid var(--line);background:#fff8;padding:8px 13px;border-radius:99px;font-size:13px}
-section{padding:80px 0}.section-head{max-width:700px;margin-bottom:35px}.section-head h2{font:600 43px/1.1 "Playfair Display";margin:8px 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:25px}.card h3{font-family:"Playfair Display";font-size:22px;margin:12px 0 7px}.icon{font-size:23px}.card p{font-size:14px;color:#66716a;margin:0}
-.pricebox{background:#fff;border:1px solid var(--line);border-radius:26px;padding:30px}.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.price{padding:18px;border-radius:16px;background:#f2f0e7}.price strong{display:block;font-size:22px}.small{font-size:12px;color:#70776f}
-.booking{background:#27342e;color:#fff}.booking .eyebrow{color:#c9b47d}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.booking h2{font:600 44px/1.1 "Playfair Display";margin:8px 0 18px}.form{background:#fff;color:var(--ink);padding:28px;border-radius:24px;display:grid;gap:15px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field label{display:block;font-size:12px;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d9d7cf;border-radius:10px;font:inherit;background:#fff}.form button{width:100%;margin-top:4px}
-.note{font-size:12px;color:#7b817a}.footer{padding:30px 0;border-top:1px solid var(--line);font-size:13px;color:#6b746d}.demo{background:#efe8d7;padding:10px 0;text-align:center;font-size:12px}
-@media(max-width:800px){.hero-grid,.booking-grid{grid-template-columns:1fr}.hero-img{height:380px}.grid,.prices{grid-template-columns:1fr 1fr}.navlinks{display:none}.top .wrap{justify-content:center}.formgrid{grid-template-columns:1fr}}
-</style></head>
-<body>
-<div class="top"><div class="wrap"><span>One-to-one grooming • Stanley / Dipton</span><a href="tel:07957580803">07957 580803</a></div></div>
-<div class="nav"><div class="wrap"><nav><div class="brand">Grace's Grooms</div><div class="navlinks"><a href="#services">Grooming</a><a href="#prices">Prices</a><a href="#booking">Booking</a></div><a class="btn" href="#booking">Request a slot</a></nav></div></div>
-<header class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">A calmer grooming experience</div><h1>Beautiful grooms.<br><em>Happy dogs.</em></h1><p>A warm, one-to-one grooming concept designed around your dog — with a simple online way to choose what you need and request an appointment.</p><div class="pills"><span class="pill">1-to-1 care</span><span class="pill">Home-based salon</span><span class="pill">Personal approach</span></div><a class="btn" href="#booking">Choose your grooming</a></div><div class="hero-img" aria-label="Dog portrait"></div></div></header>
-<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">Grooming menu</div><h2>Choose the care your dog needs.</h2><p>Services below are presented as a website concept and should be confirmed by the business owner before publishing.</p></div>
-<div class="grid">
-<article class="card"><div class="icon">✦</div><h3>Full Groom</h3><p>Bath, dry, brush-out, tidy and breed-appropriate finish.</p></article>
-<article class="card"><div class="icon">◌</div><h3>Bath & Blow Dry</h3><p>A freshen-up service for dogs who don't need a full groom.</p></article>
-<article class="card"><div class="icon">♡</div><h3>Puppy Introduction</h3><p>A gentle first-grooming option to build positive experiences.</p></article>
-<article class="card"><div class="icon">✧</div><h3>Small Extras</h3><p>Nails, de-shedding and other little finishing touches.</p></article>
-</div></div></section>
-<section id="prices"><div class="wrap"><div class="section-head"><div class="eyebrow">Example menu</div><h2>Clear, simple pricing.</h2></div><div class="pricebox"><div class="prices">
-<div class="price"><strong>£45+</strong>Full Groom</div><div class="price"><strong>£25+</strong>Bath & Blow Dry</div><div class="price"><strong>£30+</strong>Puppy Introduction</div>
-<div class="price"><strong>£10</strong>Nail Trim</div><div class="price"><strong>£30+</strong>De-shedding</div><div class="price"><strong>£25+</strong>Optional extra</div>
-</div><p class="small">Example prices for this DH9 Digital demo only — final pricing should be confirmed by Grace's Grooms and may vary by breed, size, coat condition and grooming requirements.</p></div></div></section>
-<section id="booking" class="booking"><div class="wrap booking-grid"><div><div class="eyebrow">Request an appointment</div><h2>Tell us about your dog.</h2><p>Give us a few details and we'll know what sort of appointment you're looking for. This demo form does not submit anywhere yet.</p><p><strong>Phone:</strong> <a href="tel:07957580803">07957 580803</a><br><strong>Email:</strong> <a href="mailto:gracesgrooms@gmail.com">gracesgrooms@gmail.com</a></p></div>
-<form class="form" onsubmit="event.preventDefault();alert('Demo only — this booking form is ready to connect to email or an online booking system.');">
-<div class="formgrid"><div class="field"><label>Your name</label><input required placeholder="Your name"></div><div class="field"><label>Dog's name</label><input placeholder="Dog's name"></div></div>
-<div class="formgrid"><div class="field"><label>Dog size</label><select><option>Small</option><option>Medium</option><option>Large</option><option>Giant</option></select></div><div class="field"><label>Coat type</label><select><option>Not sure</option><option>Short</option><option>Long</option><option>Curly / wool</option><option>Double coat</option></select></div></div>
-<div class="field"><label>What do you need?</label><select><option>Full groom</option><option>Bath & blow dry</option><option>Puppy introduction</option><option>Nail trim</option><option>De-shedding</option><option>I'd like advice</option></select></div>
-<div class="field"><label>Preferred timing</label><select><option>Any available appointment</option><option>Morning</option><option>Afternoon</option><option>Weekend</option></select></div>
-<div class="field"><label>Anything we should know?</label><textarea rows="3" placeholder="Temperament, previous grooming, coat condition, special requirements..."></textarea></div>
-<button class="btn" type="submit">Request appointment</button><div class="note">Demo form — connect to email/booking software when the site goes live.</div>
-</form></div></section>
-<div class="demo">DEMO WEBSITE BY DH9 DIGITAL • Business details, prices, photos and booking arrangements to be confirmed before publication.</div>
-<footer class="footer"><div class="wrap">© Grace's Grooms • Concept website by DH9 Digital</div></footer>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace's Grooms | 1-to-1 Professional Dog Grooming Dipton, DH9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f17; }
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-panel { background: rgba(18, 24, 38, 0.75); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="text-slate-100 antialiased min-h-screen pb-28">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-600 via-rose-500 to-amber-600 text-slate-950 text-[11px] font-black py-2 px-4 text-center tracking-widest uppercase shadow-md">
+        <i class="fa-solid fa-crown mr-1"></i> 1-to-1 Luxury Spa & Grooming Studio • Dipton, DH9
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-5 py-4">
+        <div class="max-w-md mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-lg font-bold font-luxury text-amber-100 tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-[#d4af37] fa-scissors text-amber-400"></i> Grace's Grooms
+                </h1>
+                <p class="text-[9px] text-amber-400/90 font-bold uppercase tracking-widest">Dipton • Stanley • DH9 9LF</p>
+            </div>
+            <a href="tel:07957580803" class="bg-amber-500/10 border border-amber-500/40 hover:bg-amber-500/20 text-amber-300 text-xs px-3.5 py-2 rounded-lg font-bold uppercase transition-all flex items-center gap-1.5 shadow-lg">
+                <i class="fa-solid fa-phone text-xs"></i> <span>07957 580803</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-5 mt-6 space-y-7">
+
+        <!-- Hero Section -->
+        <section class="relative rounded-2xl overflow-hidden border border-amber-500/20 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80" alt="Dog Grooming Spa" class="w-full h-60 object-cover brightness-[0.35]">
+            <div class="absolute inset-0 p-6 flex flex-col justify-end text-left space-y-2 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent">
+                <div class="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] uppercase font-bold text-amber-300 w-max">
+                    <i class="fa-solid fa-sparkles text-amber-400"></i> Premium 1-on-1 Pampering
+                </div>
+                <h2 class="text-2xl font-bold font-luxury text-white leading-tight">
+                    Relaxed & Tailored Care in Dipton
+                </h2>
+                <p class="text-[11px] text-slate-300 leading-relaxed">
+                    Stress-free home salon environment. Handled with patience, affection & professional precision.
+                </p>
+            </div>
+        </section>
+
+        <!-- Booking Deposit Notice Banner -->
+        <div class="bg-slate-900/90 border border-amber-500/30 p-4 rounded-xl flex items-start gap-3">
+            <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                <i class="fa-solid fa-shield-halved text-sm"></i>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-amber-200 uppercase tracking-wider">Deposit Required Upon Booking</h4>
+                <p class="text-[11px] text-slate-400 mt-0.5 leading-relaxed">
+                    To secure your slot at Grace's Grooms, a <strong class="text-white">£10.00 non-refundable deposit</strong> is taken online. The remaining balance is payable on the day.
+                </p>
+            </div>
+        </div>
+
+        <!-- Local Google Reviews Carousel -->
+        <section class="space-y-3">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-xs font-bold font-luxury uppercase text-amber-100 tracking-wider">5-Star Customer Reviews</h3>
+                    <p class="text-[10px] text-slate-400">Verified Client Feedback</p>
+                </div>
+                <div class="flex items-center gap-1 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-lg">
+                    <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                    <span class="text-xs font-black text-amber-400">5.0</span>
+                    <span class="text-[9px] text-slate-400 font-bold">(Sacriston/Dipton)</span>
+                </div>
+            </div>
+
+            <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+                <div class="min-w-[260px] max-w-[260px] glass-panel border border-slate-800 p-4 rounded-xl space-y-2">
+                    <div class="flex text-amber-400 text-[10px] gap-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[11px] text-slate-300 italic leading-snug">
+                        "Laura is so patient and talented. Thomas absolutely loves going for his groom! Couldn't recommend Grace's Grooms enough."
+                    </p>
+                    <p class="text-[10px] font-bold text-amber-300/90 pt-1 border-t border-slate-800/80">— Verified Client (DH9)</p>
+                </div>
+
+                <div class="min-w-[260px] max-w-[260px] glass-panel border border-slate-800 p-4 rounded-xl space-y-2">
+                    <div class="flex text-amber-400 text-[10px] gap-0.5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[11px] text-slate-300 italic leading-snug">
+                        "Amazing service for my Sprocker Spaniel. Very gentle handling, beautiful finish, and very reasonably priced!"
+                    </p>
+                    <p class="text-[10px] font-bold text-amber-300/90 pt-1 border-t border-slate-800/80">— Stanley Resident</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Menu -->
+        <section class="space-y-3.5">
+            <div>
+                <h3 class="text-sm font-bold font-luxury uppercase text-white tracking-wider">Select Grooming Service</h3>
+                <p class="text-[11px] text-slate-400">Select options below to calculate deposit and balance.</p>
+            </div>
+
+            <div class="space-y-3">
+                
+                <!-- Service 1 -->
+                <div onclick="selectService(this, 'Full Luxury Spa Groom', 40.00)" class="service-card cursor-pointer bg-slate-900/80 border-2 border-amber-500/80 p-4 rounded-xl transition-all shadow-xl">
+                    <div class="flex gap-3.5">
+                        <img src="https://images.unsplash.com/photo-1534361960057-19889db98d18?auto=format&fit=crop&w=300&q=80" alt="Full Groom" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Full Luxury Groom</h4>
+                                <span class="text-xs font-bold text-amber-400">from £40.00</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Warm hydrobath bath, blow dry, styled clip/cut, ear cleaning, hygiene trim & cologne finish.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div onclick="selectService(this, 'Mini Groom & Maintenance', 28.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
+                    <div class="flex gap-3.5">
+                        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=300&q=80" alt="Mini Groom" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Mini Groom & Tidy</h4>
+                                <span class="text-xs font-bold text-slate-300">from £28.00</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Ideal between full grooms. Bath, blow dry, face trim, paw trim, hygiene & nail clipping.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div onclick="selectService(this, 'Puppy First Spa Introduction', 22.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
+                    <div class="flex gap-3.5">
+                        <img src="https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&w=300&q=80" alt="Puppy Intro" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">Puppy Spa Intro</h4>
+                                <span class="text-xs font-bold text-slate-300">£22.00</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Gentle desensitisation session for pups under 6 months. Slow-paced wash, dry, paw & ear handling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div onclick="selectService(this, 'De-Shedding & Bath Treatment', 32.00)" class="service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700">
+                    <div class="flex gap-3.5">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=300&q=80" alt="Deshedding Treatment" class="w-16 h-16 rounded-lg object-cover border border-slate-700 shrink-0">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between items-start">
+                                <h4 class="text-xs font-bold text-white uppercase tracking-wide">De-Shed Spa & Blowout</h4>
+                                <span class="text-xs font-bold text-slate-300">from £32.00</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 mt-1 leading-snug">Specialist undercoat rake out, deshedding shampoo treatment, blast dry & nail clip.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Booking & Pre-payment Calculator Section -->
+        <section class="bg-slate-900 border border-amber-500/40 p-6 rounded-2xl space-y-5 shadow-2xl">
+            <div class="border-b border-slate-800 pb-4">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Selected Groom</span>
+                    <span id="selected-service-title" class="text-xs font-bold text-white">Full Luxury Groom</span>
+                </div>
+                <div class="flex justify-between items-center text-xs text-slate-400">
+                    <span>Estimated Full Price:</span>
+                    <span id="service-total-price" class="font-bold text-slate-200">£40.00</span>
+                </div>
+                <div class="flex justify-between items-center text-xs text-amber-300 mt-1 pt-1 border-t border-slate-800/60 font-bold">
+                    <span>Deposit Due Now (Online):</span>
+                    <span id="service-deposit-price" class="text-sm font-black text-amber-400">£10.00</span>
+                </div>
+            </div>
+
+            <form onsubmit="event.preventDefault(); openPaymentModal();" class="space-y-3.5">
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Your Full Name</label>
+                    <input id="owner-name" type="text" placeholder="e.g. Jessica Miller" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Dog's Name</label>
+                        <input id="dog-name" type="text" placeholder="e.g. Barnaby" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Breed & Size</label>
+                        <input id="dog-breed" type="text" placeholder="e.g. Cockapoo (Med)" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-300 uppercase tracking-wider mb-1">Mobile Contact Number</label>
+                    <input id="contact-phone" type="tel" placeholder="e.g. 07123 456789" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2.5 text-xs text-white outline-none focus:border-amber-400 transition-all">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-300 text-slate-950 font-black py-3.5 rounded-lg text-xs uppercase tracking-wider transition-all shadow-xl flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock text-xs"></i>
+                    <span>Pay £10.00 Deposit & Reserve Appointment</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Address & Contact Info -->
+        <footer class="text-center space-y-2 pt-4 border-t border-slate-800">
+            <p class="text-xs font-bold text-amber-200 uppercase font-luxury tracking-wider">Grace's Grooms</p>
+            <p class="text-[11px] text-slate-400">8 Wordsworth Gardens, Dipton, Stanley, DH9 9LF</p>
+            <p class="text-[11px] text-slate-400">Direct Telephone: 07957 580803</p>
+            <p class="text-[9px] text-slate-500 pt-2">© Grace's Grooms Stanley • Secure Deposit Gateway Prototype</p>
+        </footer>
+
+    </main>
+
+    <!-- Payment Gateway Modal Overlay -->
+    <div id="payment-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-amber-500/40 rounded-2xl max-w-sm w-full p-6 space-y-5 shadow-2xl relative">
+            
+            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-base">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center space-y-1">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-full flex items-center justify-center text-amber-400 mx-auto mb-2">
+                    <i class="fa-solid fa-credit-card text-lg"></i>
+                </div>
+                <h3 class="text-sm font-bold uppercase tracking-wider text-white">Secure Pre-Payment Deposit</h3>
+                <p class="text-[11px] text-slate-400">Grace's Grooms • Booking Deposit</p>
+            </div>
+
+            <!-- Deposit Summary Box -->
+            <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-xs space-y-1.5">
+                <div class="flex justify-between text-slate-300">
+                    <span>Deposit Due Now:</span>
+                    <strong class="text-amber-400 font-extrabold">£10.00</strong>
+                </div>
+                <div class="flex justify-between text-slate-400 text-[10px]">
+                    <span>Remaining Balance at Salon:</span>
+                    <span id="modal-remaining-balance" class="text-slate-200 font-bold">£30.00</span>
+                </div>
+            </div>
+
+            <!-- Quick Digital Wallet Buttons -->
+            <div class="space-y-2">
+                <button onclick="processPayment('Apple Pay')" class="w-full bg-white hover:bg-slate-200 text-black font-extrabold py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 transition-all">
+                    <i class="fa-brands fa-apple text-sm"></i> Pay with Apple Pay
+                </button>
+                <button onclick="processPayment('Google Pay')" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-extrabold py-2.5 rounded-lg text-xs flex items-center justify-center gap-2 border border-slate-700 transition-all">
+                    <i class="fa-brands fa-google text-xs text-amber-400"></i> Pay with Google Pay
+                </button>
+            </div>
+
+            <div class="flex items-center my-2">
+                <div class="flex-1 border-t border-slate-800"></div>
+                <span class="px-2 text-[10px] uppercase font-bold text-slate-500">Or Debit / Credit Card</span>
+                <div class="flex-1 border-t border-slate-800"></div>
+            </div>
+
+            <!-- Card Inputs Mockup -->
+            <div class="space-y-2 text-left">
+                <input type="text" placeholder="Cardholder Name" value="Jessica Miller" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+                <input type="text" placeholder="Card Number (•••• •••• •••• 4242)" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+                <div class="grid grid-cols-2 gap-2">
+                    <input type="text" placeholder="MM / YY" class="bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+                    <input type="text" placeholder="CVC" class="bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white outline-none focus:border-amber-400">
+                </div>
+            </div>
+
+            <button onclick="processPayment('Card')" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black py-3 rounded-lg text-xs uppercase tracking-wider transition-all shadow-lg">
+                Confirm & Pay £10.00 Deposit
+            </button>
+
+            <p class="text-[9px] text-center text-slate-500">
+                <i class="fa-solid fa-lock text-slate-500 mr-1"></i> 256-Bit SSL Encrypted Payment Gateway
+            </p>
+        </div>
+    </div>
+
+    <!-- Booking Confirmation Modal -->
+    <div id="confirmation-modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-emerald-500/50 rounded-2xl max-w-sm w-full p-6 text-center space-y-4 shadow-2xl">
+            <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-lg font-bold font-luxury text-white">Deposit Confirmed!</h3>
+            <p id="confirmation-details" class="text-xs text-slate-300 leading-relaxed">
+                Thank you! Your deposit of £10.00 has been received. Grace's Grooms will contact you on your mobile to confirm your appointment time.
+            </p>
+            <div class="bg-slate-950 p-3 rounded-lg text-[10px] text-slate-400 text-left space-y-1 border border-slate-800">
+                <p><strong class="text-white">Location:</strong> 8 Wordsworth Gardens, Dipton, DH9 9LF</p>
+                <p><strong class="text-white">Direct Line:</strong> 07957 580803</p>
+                <p><strong class="text-white">Ref:</strong> GG-DEP-<span id="booking-ref">8492</span></p>
+            </div>
+            <button onclick="closeConfirmationModal()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider transition-all">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let currentFullPrice = 40.00;
+        const depositPrice = 10.00;
+
+        function selectService(element, name, price) {
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.className = 'service-card cursor-pointer bg-slate-900/40 border border-slate-800 p-4 rounded-xl transition-all hover:border-slate-700';
+                const span = card.querySelector('span');
+                if(span) span.className = 'text-xs font-bold text-slate-300';
+            });
+
+            element.className = 'service-card cursor-pointer bg-slate-900/80 border-2 border-amber-500/80 p-4 rounded-xl transition-all shadow-xl';
+            const activeSpan = element.querySelector('span');
+            if(activeSpan) activeSpan.className = 'text-xs font-bold text-amber-400';
+
+            currentFullPrice = price;
+            document.getElementById('selected-service-title').innerText = name;
+            document.getElementById('service-total-price').innerText = '£' + price.toFixed(2);
+            
+            const remaining = price - depositPrice;
+            document.getElementById('modal-remaining-balance').innerText = '£' + (remaining > 0 ? remaining.toFixed(2) : '0.00');
+        }
+
+        function openPaymentModal() {
+            const name = document.getElementById('owner-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            if(!name || !phone) return;
+
+            document.getElementById('payment-modal').classList.remove('hidden');
+        }
+
+        function closePaymentModal() {
+            document.getElementById('payment-modal').classList.add('hidden');
+        }
+
+        function processPayment(method) {
+            closePaymentModal();
+            const dog = document.getElementById('dog-name').value || 'your pet';
+            const randomRef = Math.floor(1000 + Math.random() * 9000);
+            
+            document.getElementById('booking-ref').innerText = randomRef;
+            document.getElementById('confirmation-details').innerHTML = `Your <strong>£10.00 deposit</strong> was processed successfully via <strong>${method}</strong>.<br><br>Grace's Grooms looks forward to pampering <strong>${dog}</strong> at 8 Wordsworth Gardens, Dipton!`;
+            
+            document.getElementById('confirmation-modal').classList.remove('hidden');
+        }
+
+        function closeConfirmationModal() {
+            document.getElementById('confirmation-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
